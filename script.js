@@ -1,11 +1,8 @@
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
 
+hamburger.addEventListener("click", () => {
+   hamburger.classList.toggle("active");
+   navMenu.classList.toggle("active");
 
-let menu = document.querySelectorAll("nav > ul > li");
-for (let i = 0; i < menu.length; i++) {
-  menu[i].addEventListener("mouseover", function () {
-    this.querySelector("ul").style.display = "block";
-  });
-  menu[i].addEventListener("mouseout", function () {
-    this.querySelector("ul").style.display = "none";
-  });
-}
+})
